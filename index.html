@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -20,7 +21,8 @@
             position: relative;
 
         }
-        .name{
+
+        .name {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -32,17 +34,95 @@
             color: white;
         }
 
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px auto;
+            text-align: center;
+            width: 60%;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: black;
+            box-shadow: 1px 1px 1px 1px gray;
+        }
+
+        /* body[data-aos-duration='4000'] [data-aos],
+        [data-aos][data-aos][data-aos-duration='4000'] {
+            transition-duration: 4000ms;
+        } */
     </style>
 </head>
 
 <body>
     <div id="bg">
         <div class="name">I am developer</div>
+        
     </div>
+
+    <!-- Git link -->
+    <div style="text-align:center">
+        <a href="https://github.com/michalsnik/aos#animations">Chake github link</a>
+    </div>
+
+
+    <!-- Container  -->
+
+
+    <section>
+        <div class="container">
+            <div class="box" data-aos="zoom-in" data-aos-duration="4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium?</p>
+            </div>
+            <div class="box" data-aos="flip-up">
+                <p>Vero, porro aut. Exercitationem sequi, suscipit ex magnam enim ad?</p>
+            </div>
+            <div class="box" data-aos="flip-down">
+                <p>Magnam possimus vitae, ullam provident atque ipsum iste inventore eos?</p>
+            </div>
+            <div class="box" data-aos="fade-left">
+                <p>Quisquam tempora provident adipisci aspernatur cum error atque cupiditate et!</p>
+            </div>
+            <div class="box" data-aos="zoom-out-up">
+                <p>Facere ex incidunt excepturi maxime accusamus dolores vel architecto exercitationem?</p>
+            </div>
+            <div class="box" data-aos="zoom-out">
+                <p>Id, corrupti tempora! Ipsum suscipit officia qui porro doloribus commodi.</p>
+            </div>
+            <div class="box" data-aos="zoom-in">
+                <p>Aperiam fugit ab beatae ad quis et, dignissimos officiis molestias?</p>
+            </div>
+            <div class="box" data-aos="zoom-in-up">
+                <p>Ipsam qui possimus veniam ullam consectetur perspiciatis, assumenda esse a.</p>
+            </div>
+            <div class="box" data-aos="zoom-in-down">
+                <p>Tempora nostrum aliquam quod laborum commodi sunt corporis ipsum ratione?</p>
+            </div>
+            <div class="box" data-aos="zoom-in-left">
+                <p>Ipsum eius voluptatum unde sequi corrupti libero nihil nisi amet.</p>
+            </div>
+        </div>
+    </section>
+
+
+
 
 
     <script src="js/particles.min.js"></script>
     <script src="js/custom.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                offset: 300,
+                duration: 500
+            }
+        );
+    </script>
+
 </body>
 
 </html>
